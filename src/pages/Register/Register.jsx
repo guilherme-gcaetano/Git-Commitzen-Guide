@@ -30,7 +30,7 @@ const Register = () => {
     e.preventDefault();
 
     const user = autorizedUsers.find(
-      (user) => user.email != password || user.password !== email
+      (user) => user.email === email && user.password === password
     );
     console.log(user);
 
@@ -72,7 +72,7 @@ const Register = () => {
               type="submit"
               id="enviar"
               placeholder="Enviar"
-              onChange={handleSubmit}
+              onClick={handleSubmit}
             />
           </div>
         </form>
