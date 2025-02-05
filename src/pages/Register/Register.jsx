@@ -67,6 +67,14 @@ const Register = () => {
               onChange={onPasswordChange}
             />
           </div>
+          <div className="form-control">
+            <input
+              type="submit"
+              id="enviar"
+              placeholder="Enviar"
+              onChange={handleSubmit}
+            />
+          </div>
         </form>
       </div>
     </>
